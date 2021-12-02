@@ -1,0 +1,20 @@
+/* body {
+    background-color:  blue;
+} */
+
+.bg-color-blue {
+    background-color: dodgerblue;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.box {
+  width: 75px;
+  height: 75px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
