@@ -9,6 +9,9 @@
 .bg-white {
   background-color: white;
 }
+.bg-red {
+    background-color: red;
+}
 
 .box {
   width: 75px;

@@ -16,6 +16,14 @@ button.addEventListener('click', function () {
     let containerMain = document.querySelector('.grid-container');
     let select = document.getElementById('select');
     let value = select.value;
+    let bombs = [];
+    while (bombs.length < 16) {
+        let r = Math.floor(Math.random() * 100) + 1;
+        if (bombs.indexOf(r) === -1){
+            bombs.push(r);
+        } 
+    }
+    console.log(bombs);
     if (value == 'easy') {
         containerMain.innerHTML = '';
         let col = 10;
@@ -31,7 +39,10 @@ button.addEventListener('click', function () {
             }
             );
             element.innerHTML = counter;
-            containerMain.append(element);
+            containerMain.append(element); 
+            // if (fgyhfo) {
+            //     element.classList.add('bg-red')
+            // }
         }
     }
     // creazione della griglia 9x9
@@ -73,10 +84,3 @@ button.addEventListener('click', function () {
         }
     }
 });
-
-let bombs = [];
-while (bombs.length < 16) {
-    let r = Math.floor(Math.random() * 100) + 1;
-    if (bombs.indexOf(r) === -1) bombs.push(r);
-}
-console.log(bombs);
