@@ -40,9 +40,6 @@ button.addEventListener('click', function () {
             );
             element.innerHTML = counter;
             containerMain.append(element); 
-            // if (fgyhfo) {
-            //     element.classList.add('bg-red')
-            // }
         }
     }
     // creazione della griglia 9x9
